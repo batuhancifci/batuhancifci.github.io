@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <link href="Content/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" type="text/css" rel="stylesheet" />
+    <link href="Content/site.css" type="text/css" rel="stylesheet" />
+    <title>Index</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-fixed-top hidden-xs">
+        <div class="col-md-offset-4 col-md-5">
+            <ul class="nav navbar-nav">
+                <li><a href="#gor1" id="AnaSayfa">Ana Sayfa</a></li>
+                <li><a href="#gor2" id="Hakkimda">Hakkımda</a></li>
+                <li><a href="#gor3" id="Iletisim">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="gor1" class="gorsel">
+        <div class="container">
+            <div class="row">
+                <img id="profil" src="Content/Img/profil.jpg" width="200" height="200" class="img-circle img-responsive center-block" />
+                <h1 class="text-center baslik">Ekrem Batuhan ÇİFÇİ</h1>
+                <br />
+                <h3 class="text-center baslik">Kişisel Web Sitesi</h3>
+            </div>
+        </div>
+    </div>
+    <div id="bant1" class="bant"></div>
+    <div id="gor2" class="gorsel">
+        <div class="container text-center">
+            <div class="row">
+                <div class="panel panel-default hakkimda center-block">
+                    <div class="panel-body">
+                        <p>
+                            Selamlar, Ben Ekrem Batuhan ÇİFÇİ web developerım. Sakarya/Türkiye’de yaşıyorum.
+                            2015 yılından beri amatör olarak programcılık ile uğraşıyorum.
+                            Son zamanlarda .Net teknolojileri ve özellikle web uygulamaları ağırlıklı olarak kullanmaktayım.
+                        </p>
+                        <h4 class="baslik">Kısaca Geçmişim</h4>
+                        <p>
+                            1993 yılında Çorum'da doğdum. 2012 yılında Çorum Anadolu Öğretmen lisesinden mezun oldum.
+                            2012 yılında Sakarya Üniversitesi Bilgisayar Mühendisliği bölümünü kazandım ve şubat 2017 de bu bölümden mezun oldum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bant2" class="bant"></div>
+    <div id="gor3" class="gorsel">
+        <div class="container text-center">
+            <div class="row">
+                <div class="panel panel-default hakkimda center-block">
+                    <div class="panel-body">
+                        <a href="https://www.facebook.com/batuhan.cifci.7" class="fa fa-facebook-square fa-4x" style="color:white;" aria-hidden="true"></a>
+                        <a href="https://twitter.com/ebatuhancifci" class="fa fa-twitter-square fa-4x" style="color:white;" aria-hidden="true"></a>
+                        <a href="https://www.instagram.com/batuhan.cifci/" class="fa fa-instagram fa-4x" style="color:white;" aria-hidden="true"></a>
+                        <a href="https://github.com/batuhancifci" class="fa fa-github fa-4x" style="color:white;" aria-hidden="true"></a>
+                        <a href="https://www.linkedin.com/in/ekrem-batuhan-%C3%A7if%C3%A7i-864b86135/" class="fa fa-linkedin fa-4x" style="color:white;" aria-hidden="true"></a>
+                        <br />
+                        <h3 class="baslik">e.batuhan.cifci@gmail.com</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#Hakkimda').click(function () {
+                $("#gor2").animate({ scrollTop: $("#gor2").attr("scrollHeight") }, 1500);
+            });
+        });
+    </script>
+
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+</body>
+</html>
