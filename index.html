@@ -71,12 +71,18 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#Hakkimda').click(function () {
-                $("#gor2").animate({ scrollTop: $("#gor2").attr("scrollHeight") }, 1500);
-            });
+    <script>
+    
+    	$('#AnaSayfa').click(function () {
+            $('body').animate({ scrollTop: 0}, 2500);
         });
+    	$('#Hakkimda').click(function () {
+            $('body').animate({ scrollTop: 644}, 2500);
+        });
+        $('#Iletisim').click(function () {
+            $('body').animate({ scrollTop: 1288}, 2500);
+        });
+    
     </script>
 
     <script src="Scripts/bootstrap.min.js"></script>
