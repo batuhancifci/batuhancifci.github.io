@@ -12,7 +12,13 @@ p{
 
 #profil{
     margin-top: 15%;
+    transition: all .2s ease-in-out;
 }
+
+#profil:hover{
+    transform:scale(1.1);
+}
+
 .baslik{
     color:white;
 }
