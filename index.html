@@ -14,9 +14,9 @@
     <nav class="navbar navbar-fixed-top hidden-xs">
         <div class="col-md-offset-4 col-md-5">
             <ul class="nav navbar-nav">
-                <li><a href="#gor1" id="AnaSayfa">Ana Sayfa</a></li>
-                <li><a href="#gor2" id="Hakkimda">Hakkımda</a></li>
-                <li><a href="#gor3" id="Iletisim">İletişim</a></li>
+                <li><a href="#" onclick="AnasayfayaGit()" id="AnaSayfa">Ana Sayfa</a></li>
+                <li><a href="#" onclick="HakkimdayaGit()" id="Hakkimda">Hakkımda</a></li>
+                <li><a href="#" onclick="IletisimeGit()" id="Iletisim">İletişim</a></li>
             </ul>
         </div>
     </nav>
@@ -72,16 +72,20 @@
     </div>
 
     <script>
+
+    	$(document).ready(function(){
+    		$("#profil").hover()
+    	});
     
-    	$('#AnaSayfa').click(function () {
-            $('body').animate({ scrollTop: 0}, 2500);
-        });
-    	$('#Hakkimda').click(function () {
-            $('body').animate({ scrollTop: 644}, 2500);
-        });
-        $('#Iletisim').click(function () {
-            $('body').animate({ scrollTop: 1288}, 2500);
-        });
+    	function AnasayfayaGit() {
+            $('body').animate({ scrollTop: $("#gor1").position().top}, 1000);
+        };
+    	function HakkimdayaGit() {
+            $('body').animate({ scrollTop: $("#gor2").position().top}, 1000);
+        };
+        function IletisimeGit() {
+            $('body').animate({ scrollTop: $("#gor3").position().top}, 1000);
+        };
     
     </script>
 
